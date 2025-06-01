@@ -1,0 +1,39 @@
+/* frontend/src/components/ServerTitle.module.css */
+.serverTitleContainer {
+  margin-bottom: 35px;
+}
+
+.mainTitle {
+  font-size: 26px;
+  line-height: 1.2;
+  color: var(--color-text-title);
+  margin: 0 0 6px 0;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+}
+.flagIcon {
+    width: 22px;
+    height: 15px;
+    margin-right: 12px;
+    /* background-image: url('/img/de-flag.svg'); */
+    /* background-size: cover; */
+}
+
+.subtitle {
+  margin: 0 0 10px 0;
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.serverDescription {
+  font-size: 13px;
+  color: var(--color-text-secondary);
+  font-weight: 500;
+  line-height: 1.6;
+  max-width: 100%;
+}

@@ -1,0 +1,16 @@
+/* frontend/src/components/ServerDetailsColumns.module.css */
+.detailsContainer {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.message, .errorMessage {
+  padding: 30px;
+  text-align: center;
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  width: 100%; /* Take full width if columns are not rendered */
+}
+.errorMessage {
+    color: var(--color-status-off);
+}

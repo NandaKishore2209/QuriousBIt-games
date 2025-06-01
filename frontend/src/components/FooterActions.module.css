@@ -1,0 +1,8 @@
+/* frontend/src/components/FooterActions.module.css */
+.footerActions {
+  margin-top: 20px;
+  padding-top: 25px;
+  border-top: 1px solid var(--color-border-column-title);
+  display: flex;
+}
+

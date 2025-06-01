@@ -1,0 +1,39 @@
+/* frontend/src/components/HeaderBreadcrumb.module.css */
+.breadcrumb {
+  font-size: 12px;
+  line-height: 1;
+  color: var(--color-text-breadcrumb);
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb span:not(.active) {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.breadcrumb span:not(.active):hover {
+  color: var(--color-text-highlight);
+}
+
+.breadcrumb .active {
+  color: var(--color-text-highlight);
+}
+.separator {
+    margin: 0 10px;
+    color: var(--color-text-breadcrumb);
+}
+.backArrow {
+    margin-right: 15px;
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--color-text-breadcrumb);
+    font-weight: 700;
+}
+.backArrow:hover {
+    color: var(--color-text-highlight);
+}

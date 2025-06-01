@@ -1,0 +1,20 @@
+/* frontend/src/App.css */
+.app-container {
+  min-height: 100vh;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+.content-wrapper {
+  background-color: var(--color-background-panel); /* SOLID BACKGROUND FOR THE PANEL */
+  padding: 30px 40px;
+  width: 100%;
+  max-width: 1024px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  position: relative;
+  z-index: 2;
+}

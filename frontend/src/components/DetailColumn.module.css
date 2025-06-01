@@ -1,0 +1,22 @@
+/* frontend/src/components/DetailColumn.module.css */
+.column {
+  flex: 1;
+  padding: 0 20px; /* Inner padding for column content */
+}
+ /* Remove padding for first/last to align with panel edges if desired */
+.column:first-child { padding-left: 0; }
+.column:last-child { padding-right: 0; }
+
+
+.title {
+  font-size: 12px;
+  line-height: 1;
+  color: var(--color-text-column-title); /* Brighter title for SETTINGS etc. */
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 15px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--color-border-column-title);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}

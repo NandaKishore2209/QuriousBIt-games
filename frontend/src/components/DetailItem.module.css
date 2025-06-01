@@ -1,0 +1,45 @@
+/* frontend/src/components/DetailItem.module.css */
+.detailItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9px 0;
+  font-size: 13px;
+  line-height: 1.2;
+  border-bottom: 1px solid var(--color-border-panel-item);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out; /* Added color transition for children */
+}
+.detailItem:last-child {
+    border-bottom: none;
+}
+
+.detailItem:hover {
+  background-color: var(--color-white);
+}
+
+.label {
+  color: var(--color-text-secondary);
+  font-weight: 700;
+  transition: color 0.1s ease-in-out;
+}
+.detailItem:hover .label {
+  color: var(--color-black-text-on-hover) !important;
+}
+
+.value {
+  color: var(--color-text-highlight); /* Default: white */
+  font-weight: 700;
+  text-align: right;
+  transition: color 0.1s ease-in-out;
+}
+.detailItem:hover .value { /* This targets all spans with .value on hover */
+  color: var(--color-black-text-on-hover) !important;
+}
+
+/* Specific initial value colors */
+.statusOn { color: var(--color-status-on) !important; }
+.statusOff { color: var(--color-status-off) !important; }
+.valueYellow { color: var(--color-value-yellow-rules) !important; }

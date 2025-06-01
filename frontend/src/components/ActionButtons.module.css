@@ -1,0 +1,40 @@
+/* frontend/src/components/ActionButtons.module.css */
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 35px;
+  align-items: center;
+}
+
+.joinButton { /* Initial style for JOIN button */
+    background-color: var(--color-accent-blue-join) !important;
+    border-color: var(--color-accent-blue-join) !important;
+    color: var(--color-white) !important;
+}
+/* Hover for .joinButton is handled by global .bf4-button:hover */
+
+.favoriteButton {
+  /* Base style from .bf4-button in index.css */
+  margin-left: auto;
+  display: flex; /* Already in global, but ensure for gap */
+  align-items: center;
+  gap: 8px;
+  padding: 9px 18px; /* Adjusted padding */
+}
+
+.starFilled, .starOutline {
+  font-size: 15px;
+  line-height: 1;
+}
+
+.favoriteButton.isFavoritedActive .starFilled,
+.favoriteButton.isFavoritedActive .starOutline {
+  color: var(--color-accent-orange-players); /* Or your preferred active favorite color */
+}
+
+/* Text/icon color on hover is handled by .bf4-button:hover in index.css */
+.favoriteButton:hover .starFilled,
+.favoriteButton:hover .starOutline,
+.favoriteButton:hover .favoriteCount {
+    color: var(--color-black-text-on-hover) !important;
+}
